@@ -1,10 +1,8 @@
 import logging
-from asyncio import create_task
 from contextlib import asynccontextmanager
 from subprocess import Popen
-from traceback import format_exc, print_exc
 
-from fastapi import BackgroundTasks, FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 from duck_chat import DuckChat, ModelType
