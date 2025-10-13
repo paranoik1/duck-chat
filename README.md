@@ -67,10 +67,19 @@ pip install -r requirements.txt
 ## ▶️ Запуск
 
 ```bash
-python main.py
-```
+$ python main.py
+usage: main.py [-h] [--host HOST] [--port PORT] [--log-level LOG_LEVEL] [-f]
 
-Сервер запустится на `http://127.0.0.1:8000`.
+Запуск сервиса
+
+options:
+  -h, --help            show this help message and exit
+  --host HOST           Хост для сервера (по умолчанию 127.0.0.1)
+  --port PORT           Порт для сервера (по умолчанию 8000)
+  --log-level LOG_LEVEL
+                        Уровень логирования (например, debug, info, warning, error, critical)
+  -f                    Пропустить проверку needs_editing и запустить generate_models без условий
+```
 
 ---
 
@@ -127,6 +136,7 @@ duck-local-chat-api/
 ├── service.py            # Основной FastAPI-сервер
 ├── utils.py              # Скрипт получения заголовков через Playwright
 ├── headers_manager.py    # Управление сохранением/загрузкой заголовков
+├── main.py               # Скрипт запуска
 └── duck_chat/            # Модифицированная библиотека для работы с duck.ai
 ```
 
