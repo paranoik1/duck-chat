@@ -1,6 +1,6 @@
 [project]
 name = "duck_chat_api"
-version = "0.2.0"
+version = "0.2.1"
 description = "DuckDuckGo Chat AI client"
 authors = [
     {name = "paranoik1", email = "paranoik@duck.com"}
@@ -40,7 +40,7 @@ api-service = [
     
 
 [tool.poetry.scripts]
-duck-api-service = "duck_chat.service.__main__:main"
+duck-api-service = "duck_chat_api.service.__main__:main"
 
 [tool.poetry.group.dev]
 optional = true
