@@ -22,13 +22,13 @@
 ### Установка основной библиотеки:
 
 ```bash
-pip install git+https://github.com/paranoik1/duck-local-chat-api
+pip install git+https://github.com/paranoik1/duck-chat
 ```
 
 ### Установка с дополнительными зависимостями для API-сервиса:
 
 ```bash
-pip install "duck_chat[api-service]"
+pip install "duck-chat-api[api-service]"
 ```
 
 ### Установка для разработки:
